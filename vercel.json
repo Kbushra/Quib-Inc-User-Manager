@@ -1,0 +1,17 @@
+{
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "cleanUrls": true,
+    "trailingSlash": true,
+    "buildCommand": "npm run build",
+    "outputDirectory": ".",
+    "installCommand": "npm install",
+    "rewrites":
+    [
+        { "source": "/", "destination": "/api/exporter/" },
+        { "source": "/signup/", "destination": "/api/exporter/" },
+        { "source": "/login/", "destination": "/api/exporter/" },
+        { "source": "/settings/", "destination": "/api/exporter/" },
+        { "source": "/delete-account/", "destination": "/api/exporter/" },
+        { "source": "/update-user/", "destination": "/api/exporter/" }
+    ]
+}
