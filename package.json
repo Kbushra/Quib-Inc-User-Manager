@@ -8,9 +8,8 @@
   "scripts": {
     "host": "npx nodemon --exec tsx ./ts-api/hoster.ts",
     "build-pages": "esbuild ./tsx-pages/*.tsx --bundle --minify --sourcemap --format=esm --outdir=./js-pages",
-    "build-app": "esbuild ./ts-api/app.ts --bundle --minify --sourcemap --format=esm --platform=node --outdir=./api",
-    "build-exporter": "esbuild ./ts-api/exporter.ts --minify --sourcemap --format=esm --platform=node --packages=external --outdir=./api",
-    "build": "npm run build-pages && npm run build-app && npm run build-exporter",
+    "build-api": "esbuild ./ts-api/*.ts --bundle --minify --sourcemap --format=esm --platform=node --packages=external --outdir=./api",
+    "build": "npm run build-pages && npm run build-api",
     "sql": "psql $(dotenv -p POSTGRES_URL)"
   },
   "main": "api/exporter.js",
