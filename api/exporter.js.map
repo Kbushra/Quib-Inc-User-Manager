@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../ts-api/exporter.ts"],
+  "sourcesContent": ["import express from \"express\";\r\nimport app from \"./app.js\";\r\nexport default (req: express.Request, res: express.Response) => app(req, res);"],
+  "mappings": "AAAA,MAAoB,UACpB,OAAOA,MAAS,WAChB,IAAOC,EAAQ,CAACC,EAAsBC,IAA0BH,EAAIE,EAAKC,CAAG",
+  "names": ["app", "exporter_default", "req", "res"]
+}
